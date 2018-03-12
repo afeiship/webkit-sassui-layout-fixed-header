@@ -1,0 +1,44 @@
+/*webkit-sassui-layout-fixed-header Start*/
+/*webkit-sassui-layout-fixed-header End*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.test-webkit-sassui-layout-fixed-footer > .header {
+  background: #eee;
+  line-height: 50px;
+  text-align: center;
+}
+
+.test-webkit-sassui-layout-fixed-footer > .header button {
+  background: #4cd964;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 10px 20px;
+}
+
+.test-webkit-sassui-layout-fixed-footer[data-hasbar=true] {
+  padding-top: 60px;
+}
+
+.test-webkit-sassui-layout-fixed-footer[data-hasbar=false] {
+  padding-top: 0;
+}
+
+.test-webkit-sassui-layout-fixed-footer[data-hasbar=false] > .header {
+  display: none;
+}
+
+.test-webkit-sassui-layout-fixed-footer > .header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}

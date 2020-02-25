@@ -3,11 +3,50 @@
  * description: Fixed header bar for sassui.
  * url: https://github.com/afeiship/webkit-sassui-layout-fixed-header
  * version: 1.0.0
- * date: 2020-02-25 12:27:03
+ * date: 2020-02-25 12:34:49
  * license: MIT
  */
 /*webkit-sassui-layout-fixed-header Start*/
 /*webkit-sassui-layout-fixed-header End*/
-.test-webkit-sassui-layout-fixed-header {
-  border: 1px solid red;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.test-webkit-sassui-layout-fixed-footer > .is-header {
+  background: #eee;
+  line-height: 50px;
+  text-align: center;
+}
+
+.test-webkit-sassui-layout-fixed-footer > .is-header button {
+  background: #4cd964;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 10px 20px;
+}
+
+.test-webkit-sassui-layout-fixed-footer[data-hasbar="true"] {
+  padding-top: 60px;
+}
+
+.test-webkit-sassui-layout-fixed-footer[data-hasbar="false"] {
+  padding-top: 0;
+}
+
+.test-webkit-sassui-layout-fixed-footer[data-hasbar="false"] > .is-header {
+  display: none;
+}
+
+.test-webkit-sassui-layout-fixed-footer > .is-header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }

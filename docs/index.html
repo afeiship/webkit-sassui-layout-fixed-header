@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>webkit-sassui-layout-fixed-header</title>
+  <title>webkit-sassui-layout-fixed-footer</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+
+
+  <div class="wrapper test-webkit-sassui-layout-fixed-footer" data-hasbar=true>
+    <div class="is-header">
+      <span>My header</span>
+      <button id='btn'>Close ME</button>
+    </div>
+
+    <div style="height:200px; background:salmon;"></div>
+    <div style="height:200px; background:royalblue;"></div>
+    <div style="height:200px; background:saddlebrown;"></div>
+    <div style="height:200px; background:salmon;"></div>
+    <div style="height:200px; background:seagreen;"></div>
+    <div style="height:200px; background:sienna;"></div>
+    <div style="height:200px; background:salmon;"></div>
+    <div style="height:200px; background:skyblue;"></div>
+    <div style="height:200px; background:salmon;"></div>
+
+
+  </div>
+
+  <script>
+    var btn = document.querySelector('#btn');
+    var wrapper = document.querySelector('.wrapper');
+    btn.onclick = function () {
+      wrapper.setAttribute('data-hasbar', false);
+    }
+  </script>
 
 </body>
 

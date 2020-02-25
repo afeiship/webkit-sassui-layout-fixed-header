@@ -1,24 +1,24 @@
 /*webkit-sassui-layout-fixed-header Start*/
-@mixin webkit-sassui-layout-fixed-header($inHeight: 50px, $inGap: 10px){
+@mixin webkit-sassui-layout-fixed-header($inHeight: 50px, $inGap: 10px) {
   $padding-top: $inHeight + $inGap;
 
-  &[data-hasbar=true]{
+  &[data-hasbar="true"] {
     padding-top: $padding-top;
   }
-  &[data-hasbar=false]{
+  &[data-hasbar="false"] {
     padding-top: 0;
-    >.header{
+    > .is-header {
       display: none;
     }
   }
 
-  >.header{
+  > .is-header {
     position: fixed;
     height: $inHeight;
-    top:0;
-    left:0;
-    right:0;
-    z-index:2;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
   }
 }
 /*webkit-sassui-layout-fixed-header End*/

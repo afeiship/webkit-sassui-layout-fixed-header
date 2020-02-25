@@ -1,0 +1,33 @@
+/*!
+ * name: @feizheng/webkit-sassui-layout-fixed-header
+ * description: Fixed header bar for sassui.
+ * url: https://github.com/afeiship/webkit-sassui-layout-fixed-header
+ * version: 1.0.0
+ * date: 2020-02-25 12:27:03
+ * license: MIT
+ */
+
+/*webkit-sassui-layout-fixed-header Start*/
+@mixin webkit-sassui-layout-fixed-header($inHeight: 50px, $inGap: 10px) {
+  $padding-top: $inHeight + $inGap;
+
+  &[data-hasbar="true"] {
+    padding-top: $padding-top;
+  }
+  &[data-hasbar="false"] {
+    padding-top: 0;
+    > .is-header {
+      display: none;
+    }
+  }
+
+  > .is-header {
+    position: fixed;
+    height: $inHeight;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
+/*webkit-sassui-layout-fixed-header End*/

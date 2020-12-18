@@ -1,19 +1,24 @@
 /*!
- * name: @feizheng/webkit-sassui-layout-fixed-header
- * description: Fixed header bar for sassui.
- * url: https://github.com/afeiship/webkit-sassui-layout-fixed-header
+ * name: @jswork/wsui-layout-fixed-header
+ * description: Fixed header bar for wsui.
+ * homepage: https://github.com/afeiship/wsui-layout-fixed-header
  * version: 1.0.0
- * date: 2020-02-25 12:34:49
+ * date: 2020-12-18 21:40:57
  * license: MIT
  */
 
-/*webkit-sassui-layout-fixed-header Start*/
-@mixin webkit-sassui-layout-fixed-header($inHeight: 50px, $inGap: 10px) {
-  $padding-top: $inHeight + $inGap;
+/*wsui-layout-fixed-header Start*/
+$wsui-layout-fixed-header-options: (
+  color: #f00,
+) !default;
+
+@mixin wsui-layout-fixed-header($in-height: 50px, $in-gap: 10px) {
+  $padding-top: $in-height + $in-gap;
 
   &[data-hasbar="true"] {
     padding-top: $padding-top;
   }
+
   &[data-hasbar="false"] {
     padding-top: 0;
     > .is-header {
@@ -23,11 +28,11 @@
 
   > .is-header {
     position: fixed;
-    height: $inHeight;
+    height: $in-height;
     top: 0;
     left: 0;
     right: 0;
     z-index: 2;
   }
 }
-/*webkit-sassui-layout-fixed-header End*/
+/*wsui-layout-fixed-header End*/

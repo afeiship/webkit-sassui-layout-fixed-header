@@ -7,7 +7,7 @@
   -webkit-margin-after: 0;
 }
 
-.test-webkit-sassui-layout-fixed-footer {
+.test-wsui-layout-fixed-footer {
   > .is-header {
     background: #eee;
     line-height: 50px;
@@ -23,5 +23,5 @@
     }
   }
 
-  @include webkit-sassui-layout-fixed-header();
+  @include wsui-layout-fixed-header();
 }

@@ -1,13 +1,13 @@
 /*!
- * name: @feizheng/webkit-sassui-layout-fixed-header
- * description: Fixed header bar for sassui.
- * url: https://github.com/afeiship/webkit-sassui-layout-fixed-header
+ * name: @jswork/wsui-layout-fixed-header
+ * description: Fixed header bar for wsui.
+ * homepage: https://github.com/afeiship/wsui-layout-fixed-header
  * version: 1.0.0
- * date: 2020-02-25 12:34:49
+ * date: 2020-12-18 21:40:57
  * license: MIT
  */
-/*webkit-sassui-layout-fixed-header Start*/
-/*webkit-sassui-layout-fixed-header End*/
+/*wsui-layout-fixed-header Start*/
+/*wsui-layout-fixed-header End*/
 * {
   margin: 0;
   padding: 0;
@@ -15,13 +15,13 @@
   -webkit-margin-after: 0;
 }
 
-.test-webkit-sassui-layout-fixed-footer > .is-header {
+.test-wsui-layout-fixed-footer > .is-header {
   background: #eee;
   line-height: 50px;
   text-align: center;
 }
 
-.test-webkit-sassui-layout-fixed-footer > .is-header button {
+.test-wsui-layout-fixed-footer > .is-header button {
   background: #4cd964;
   color: #fff;
   border: none;
@@ -30,19 +30,19 @@
   padding: 10px 20px;
 }
 
-.test-webkit-sassui-layout-fixed-footer[data-hasbar="true"] {
+.test-wsui-layout-fixed-footer[data-hasbar="true"] {
   padding-top: 60px;
 }
 
-.test-webkit-sassui-layout-fixed-footer[data-hasbar="false"] {
+.test-wsui-layout-fixed-footer[data-hasbar="false"] {
   padding-top: 0;
 }
 
-.test-webkit-sassui-layout-fixed-footer[data-hasbar="false"] > .is-header {
+.test-wsui-layout-fixed-footer[data-hasbar="false"] > .is-header {
   display: none;
 }
 
-.test-webkit-sassui-layout-fixed-footer > .is-header {
+.test-wsui-layout-fixed-footer > .is-header {
   position: fixed;
   height: 50px;
   top: 0;
